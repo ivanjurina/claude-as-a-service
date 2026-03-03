@@ -439,6 +439,70 @@ ul, ol {
   background: var(--color-border);
 }
 
+/* ---------- Social Proof Strip ---------- */
+.social-proof-strip {
+  background: var(--color-white);
+  border-top: 1px solid var(--color-border-light);
+  border-bottom: 1px solid var(--color-border-light);
+  padding: var(--space-xl) 0;
+}
+
+.proof-strip-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xl);
+}
+
+.proof-strip-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-tertiary);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.proof-strip-quotes {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.proof-strip-quotes::-webkit-scrollbar {
+  display: none;
+}
+
+.proof-strip-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.proof-strip-quote {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.proof-strip-author {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+  white-space: nowrap;
+}
+
+.proof-strip-divider {
+  width: 1px;
+  height: 32px;
+  background: var(--color-border);
+  flex-shrink: 0;
+}
+
 /* ---------- Problem Section ---------- */
 .section-problem {
   background: var(--color-warm-white);
@@ -1383,6 +1447,42 @@ ul, ol {
 
   .solution-card-featured {
     grid-template-columns: 1fr;
+  }
+
+  .solution-card {
+    padding: var(--space-xl);
+  }
+
+  .solution-card h3 {
+    font-size: 1.0625rem;
+  }
+
+  .solution-card p {
+    font-size: 0.875rem;
+  }
+
+  .migration-flow {
+    gap: var(--space-md);
+  }
+
+  .migration-node {
+    padding: 12px 20px;
+    font-size: 0.875rem;
+  }
+
+  .migration-arrow svg {
+    width: 28px;
+  }
+
+  .proof-strip-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .proof-strip-quotes {
+    gap: var(--space-lg);
+    width: 100%;
   }
 
   .form-row {
