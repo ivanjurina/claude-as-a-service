@@ -1,0 +1,9 @@
+{
+  "name": "claude-as-a-service",
+  "version": "1.0.0",
+  "description": "Claude Migration as a Service - Transform your business with AI",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . --listen 3000"
+  }
+}
